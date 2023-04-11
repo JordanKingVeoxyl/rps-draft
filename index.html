@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+    <!-- Wrote basic structure of HTML on my own but made a few changes to follow the tutorials from 
+    What's Dev and from Web Dev simplified. Used class names from What's dev-->
+    <!-- Heading area-->
+    <header>
+    <h1>Rock Paper Scissors</h1>
+    </header>
+    <h3>Make your move!</h3>
+    <!-- The different buttons to chose from when playing the game -->
+    <div class="choices">
+        <div class="choice" id="r">
+            <p>✊</p>
+        </div>
+        <div class="choice" id="p">
+            <p>✋</p>
+        </div>
+        <div class="choice" id="s">
+            <p>✌️</p>
+        </div>
+    </div>
+    <!-- The result for each move in text -->
+    <div class="result">
+        <p>Paper covers rock. You win!</p>
+    </div>
+    <!-- The result for each move in scores -->
+    <div class="score-board">
+        <div class="score-text">
+            You<span id="user-score">0</span>
+        </div>
+        <div class="score-text">
+            Computer<span id="computer-score">0</span>
+        </div>
+    </div>
+    <!-- JavaScript file-->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
