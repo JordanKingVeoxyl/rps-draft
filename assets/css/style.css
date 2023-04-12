@@ -2,24 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bungee', cursive;
+    font-family: 'DynaPuff', cursive;
 
 }
 
 body {
-    background-color: #f7f0e6;
+    background-color: #B70C59;
 }
 
 h1 {
     font-size: 300%;
-    color: #49372F;
+    color: #EBBA4A;
     text-align: center;
+    padding: 1rem;
 }
 
 h3 {
     font-size: 150%;
-    color: #49372F;
+    color: #7B9737;
     text-align: center;
+    padding: 1rem;
 }
 
 /* ROCK PAPER SCISSORS IMAGES*/
@@ -28,15 +30,23 @@ h3 {
 .choices {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: red;
 }
 
 .choice {
     cursor: pointer;
     transition: 100ms;
+    padding: 2rem;
+}
+
+.choice>p {
+    font-size: 100px;
 }
 
 .choice:hover {
-    transform: scale(1.3);
+    transform: scale(1.7);
 }
 
 /* MESSAGE TEXT ON WHO WON*/
@@ -44,7 +54,10 @@ h3 {
 
 .result {
     font-size: 150%;
-    color: #49372F;
+    color: #EBBA4A;
+    padding: 1rem;
+    background-color: blue;
+    border-radius: 50%;
 }
 
 .result>p {
@@ -62,7 +75,7 @@ h3 {
 }
 
 .score-text {
-    color: #49372F;
+    color: #7B9737;
 }
 
 #user-score {
@@ -100,4 +113,8 @@ h3 {
             max-width: 33%;
             height: auto;
         }
-    }   
+        .choice>p {
+            font-size: 50px;
+        }
+        
+    }
